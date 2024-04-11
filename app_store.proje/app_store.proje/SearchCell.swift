@@ -9,6 +9,12 @@ import UIKit
 
 class SearchCell : UICollectionViewCell{
     // MARK: - Properties
+    var result : Result? {
+        didSet { configure() }
+    }
+    
+    
+    
     private let appPhoto: UIImageView = {
         let imageView = UIImageView()
         imageView.customMode()
@@ -47,12 +53,12 @@ class SearchCell : UICollectionViewCell{
         label.text = "Twitter"
         return label
     }()
-    private let catagoryLabel : UILabel = {
+    private let catagoryLabel: UILabel = {
        let label = UILabel()
         label.text = "Sosyal Medya"
         return label
     }()
-    private let downloadLabel : UILabel = {
+    private let ratingLabel : UILabel = {
        let label = UILabel()
         label.text = "1.9M"
         return label
@@ -92,7 +98,7 @@ class SearchCell : UICollectionViewCell{
 extension SearchCell{
     private func style(){
         labelStackVİew = UIStackView(arrangedSubviews: [
-            nameLabel,catagoryLabel,downloadLabel
+            nameLabel,catagoryLabel,ratingLabel
         ])
 
         labelStackVİew.distribution  = .fillEqually
@@ -124,11 +130,19 @@ extension SearchCell{
     private func layout(){
         addSubview(TotalAppScreenStackView)
         NSLayoutConstraint.activate([
-            TotalAppScreenStackView.topAnchor.constraint(equalTo: topAnchor, constant: 8),
+            TotalAppScreenStackView.topAnchor.constraint(equalTo: topAnchor),
             TotalAppScreenStackView.leadingAnchor.constraint(equalTo: leadingAnchor , constant: 16),
             TotalAppScreenStackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant:  -16),
-            TotalAppScreenStackView.bottomAnchor.constraint(equalTo: bottomAnchor ),
+            TotalAppScreenStackView.bottomAnchor.constraint(equalTo: bottomAnchor )
             
         ])
+    }
+    
+    private func configure(){
+        guard let result = self.result else{ return }
+        let model = SearchCellViewModel(result: result)
+        self.nameLabel.text = model.nameLabel
+        self.ratingLabel.text = model.ratingLabel
+        self.catagoryLabel.text = model.catagoryLabel
     }
 }
