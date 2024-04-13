@@ -22,6 +22,15 @@
 		A54998802BC71DA40059D754 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A549987F2BC71DA40059D754 /* AppViewController.swift */; };
 		A54998822BC71DB60059D754 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54998812BC71DB60059D754 /* SearchViewController.swift */; };
 		A54998882BC72AAE0059D754 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54998872BC72AAE0059D754 /* SearchCell.swift */; };
+		A5A015CB2BC89FDC008C59D1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A5A015CA2BC89FDC008C59D1 /* Kingfisher */; };
+		A5A015CD2BC8A882008C59D1 /* AppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A015CC2BC8A882008C59D1 /* AppCell.swift */; };
+		A5B77C142BC9FB22009BCC64 /* AppCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B77C132BC9FB22009BCC64 /* AppCellController.swift */; };
+		A5B77C162BC9FFEA009BCC64 /* AppCellDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B77C152BC9FFEA009BCC64 /* AppCellDetail.swift */; };
+		A5B77C182BCA14FF009BCC64 /* AppHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B77C172BCA14FF009BCC64 /* AppHeaderView.swift */; };
+		A5B77C1A2BCA181D009BCC64 /* AppHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B77C192BCA181D009BCC64 /* AppHeaderViewController.swift */; };
+		A5B77C1C2BCA18F9009BCC64 /* AppHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B77C1B2BCA18F9009BCC64 /* AppHeaderViewCell.swift */; };
+		A5B77C1E2BCA21AF009BCC64 /* AppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B77C1D2BCA21AF009BCC64 /* AppService.swift */; };
+		A5B77C202BCA239B009BCC64 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B77C1F2BCA239B009BCC64 /* AppModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +49,14 @@
 		A549987F2BC71DA40059D754 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
 		A54998812BC71DB60059D754 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		A54998872BC72AAE0059D754 /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		A5A015CC2BC8A882008C59D1 /* AppCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCell.swift; sourceTree = "<group>"; };
+		A5B77C132BC9FB22009BCC64 /* AppCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCellController.swift; sourceTree = "<group>"; };
+		A5B77C152BC9FFEA009BCC64 /* AppCellDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCellDetail.swift; sourceTree = "<group>"; };
+		A5B77C172BCA14FF009BCC64 /* AppHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHeaderView.swift; sourceTree = "<group>"; };
+		A5B77C192BCA181D009BCC64 /* AppHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHeaderViewController.swift; sourceTree = "<group>"; };
+		A5B77C1B2BCA18F9009BCC64 /* AppHeaderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHeaderViewCell.swift; sourceTree = "<group>"; };
+		A5B77C1D2BCA21AF009BCC64 /* AppService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppService.swift; sourceTree = "<group>"; };
+		A5B77C1F2BCA239B009BCC64 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5A015CB2BC89FDC008C59D1 /* Kingfisher in Frameworks */,
 				A519D2EF2BC77386007CDD40 /* Alamofire in Frameworks */,
 				A519D2F12BC77386007CDD40 /* AlamofireDynamic in Frameworks */,
 			);
@@ -55,38 +73,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A519D2EA2BC76846007CDD40 /* extensions */ = {
-			isa = PBXGroup;
-			children = (
-				A519D2EB2BC76857007CDD40 /* Extension.swift */,
-			);
-			name = extensions;
-			sourceTree = "<group>";
-		};
-		A519D2F22BC773AF007CDD40 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				A519D2F72BC77428007CDD40 /* SearchAPI.swift */,
-			);
-			name = Services;
-			sourceTree = "<group>";
-		};
-		A519D2F92BC7772B007CDD40 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				A519D2FA2BC77743007CDD40 /* SearchResult.swift */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		A519D2FD2BC80380007CDD40 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				A519D2FE2BC8039D007CDD40 /* SearchCellViewModel.swift */,
-			);
-			name = ViewModel;
-			sourceTree = "<group>";
-		};
 		A54998552BC71AA70059D754 = {
 			isa = PBXGroup;
 			children = (
@@ -106,12 +92,12 @@
 		A54998602BC71AA70059D754 /* app_store.proje */ = {
 			isa = PBXGroup;
 			children = (
-				A519D2FD2BC80380007CDD40 /* ViewModel */,
-				A519D2F92BC7772B007CDD40 /* Model */,
-				A519D2F22BC773AF007CDD40 /* Services */,
-				A519D2EA2BC76846007CDD40 /* extensions */,
-				A54998852BC72A8F0059D754 /* View */,
-				A54998782BC71C9D0059D754 /* Controller */,
+				A5AC37162BC89E1B009C95F0 /* Controller */,
+				A5AC37152BC89DFB009C95F0 /* View */,
+				A5AC37112BC89DAD009C95F0 /* Extension */,
+				A5AC37102BC89D96009C95F0 /* Services */,
+				A5AC370E2BC89D80009C95F0 /* Model */,
+				A5AC370D2BC89D67009C95F0 /* ViewModel */,
 				A54998772BC71C500059D754 /* Files */,
 			);
 			path = app_store.proje;
@@ -129,23 +115,71 @@
 			name = Files;
 			sourceTree = "<group>";
 		};
-		A54998782BC71C9D0059D754 /* Controller */ = {
+		A5AC370D2BC89D67009C95F0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				A54998752BC71AE20059D754 /* MainTabBarController.swift */,
-				A549987A2BC71D340059D754 /* TodayViewController.swift */,
-				A549987F2BC71DA40059D754 /* AppViewController.swift */,
-				A54998812BC71DB60059D754 /* SearchViewController.swift */,
+				A519D2FE2BC8039D007CDD40 /* SearchCellViewModel.swift */,
 			);
-			name = Controller;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		A54998852BC72A8F0059D754 /* View */ = {
+		A5AC370E2BC89D80009C95F0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A519D2FA2BC77743007CDD40 /* SearchResult.swift */,
+				A5B77C1F2BCA239B009BCC64 /* AppModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A5AC37102BC89D96009C95F0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A519D2F72BC77428007CDD40 /* SearchAPI.swift */,
+				A5B77C1D2BCA21AF009BCC64 /* AppService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A5AC37112BC89DAD009C95F0 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A519D2EB2BC76857007CDD40 /* Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A5AC37152BC89DFB009C95F0 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				A54998872BC72AAE0059D754 /* SearchCell.swift */,
+				A5A015CC2BC8A882008C59D1 /* AppCell.swift */,
+				A5B77C152BC9FFEA009BCC64 /* AppCellDetail.swift */,
+				A5B77C172BCA14FF009BCC64 /* AppHeaderView.swift */,
+				A5B77C1B2BCA18F9009BCC64 /* AppHeaderViewCell.swift */,
 			);
-			name = View;
+			path = View;
+			sourceTree = "<group>";
+		};
+		A5AC37162BC89E1B009C95F0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A5B77C122BC9FAED009BCC64 /* App */,
+				A54998812BC71DB60059D754 /* SearchViewController.swift */,
+				A549987A2BC71D340059D754 /* TodayViewController.swift */,
+				A54998752BC71AE20059D754 /* MainTabBarController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A5B77C122BC9FAED009BCC64 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A549987F2BC71DA40059D754 /* AppViewController.swift */,
+				A5B77C132BC9FB22009BCC64 /* AppCellController.swift */,
+				A5B77C192BCA181D009BCC64 /* AppHeaderViewController.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +201,7 @@
 			packageProductDependencies = (
 				A519D2EE2BC77386007CDD40 /* Alamofire */,
 				A519D2F02BC77386007CDD40 /* AlamofireDynamic */,
+				A5A015CA2BC89FDC008C59D1 /* Kingfisher */,
 			);
 			productName = app_store.proje;
 			productReference = A549985E2BC71AA70059D754 /* app_store.proje.app */;
@@ -198,6 +233,7 @@
 			mainGroup = A54998552BC71AA70059D754;
 			packageReferences = (
 				A519D2ED2BC77386007CDD40 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				A5A015C92BC89FDC008C59D1 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = A549985F2BC71AA70059D754 /* Products */;
 			projectDirPath = "";
@@ -226,14 +262,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				A54998822BC71DB60059D754 /* SearchViewController.swift in Sources */,
+				A5B77C1E2BCA21AF009BCC64 /* AppService.swift in Sources */,
+				A5B77C1A2BCA181D009BCC64 /* AppHeaderViewController.swift in Sources */,
 				A54998802BC71DA40059D754 /* AppViewController.swift in Sources */,
+				A5B77C1C2BCA18F9009BCC64 /* AppHeaderViewCell.swift in Sources */,
+				A5B77C162BC9FFEA009BCC64 /* AppCellDetail.swift in Sources */,
 				A519D2FB2BC77743007CDD40 /* SearchResult.swift in Sources */,
 				A549987B2BC71D340059D754 /* TodayViewController.swift in Sources */,
 				A54998882BC72AAE0059D754 /* SearchCell.swift in Sources */,
 				A54998622BC71AA70059D754 /* AppDelegate.swift in Sources */,
 				A54998762BC71AE20059D754 /* MainTabBarController.swift in Sources */,
+				A5B77C202BCA239B009BCC64 /* AppModel.swift in Sources */,
 				A54998642BC71AA70059D754 /* SceneDelegate.swift in Sources */,
 				A519D2FF2BC8039D007CDD40 /* SearchCellViewModel.swift in Sources */,
+				A5B77C182BCA14FF009BCC64 /* AppHeaderView.swift in Sources */,
+				A5B77C142BC9FB22009BCC64 /* AppCellController.swift in Sources */,
+				A5A015CD2BC8A882008C59D1 /* AppCell.swift in Sources */,
 				A519D2EC2BC76857007CDD40 /* Extension.swift in Sources */,
 				A519D2F82BC77428007CDD40 /* SearchAPI.swift in Sources */,
 			);
@@ -462,6 +506,14 @@
 				minimumVersion = 5.9.1;
 			};
 		};
+		A5A015C92BC89FDC008C59D1 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -474,6 +526,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A519D2ED2BC77386007CDD40 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = AlamofireDynamic;
+		};
+		A5A015CA2BC89FDC008C59D1 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A5A015C92BC89FDC008C59D1 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -17,10 +17,10 @@ extension MainTabBarController{
     private func setup(){
         
         viewControllers = [
-        
+            createViewController(rootViewController: AppViewController(), title: "Apps", imageName: "square.stack.3d.up"),
             createViewController(rootViewController: SearchViewController(), title: "Saerch", imageName: "magnifyingglass"),
             createViewController(rootViewController: TodayViewController(), title: "Today", imageName: "doc.text.image"),
-            createViewController(rootViewController: AppViewController(), title: "Apps", imageName: "square.stack.3d.up"),
+
             
         ]
     }

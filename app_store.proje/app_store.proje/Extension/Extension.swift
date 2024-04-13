@@ -12,4 +12,9 @@ extension UIImageView{
         contentMode = .scaleAspectFill
         clipsToBounds = true
     }
+    func screenShot(){
+        layer.cornerRadius = 12
+        layer.borderColor = UIColor.darkGray.cgColor
+        layer.borderWidth = 0.80
+    }
 }

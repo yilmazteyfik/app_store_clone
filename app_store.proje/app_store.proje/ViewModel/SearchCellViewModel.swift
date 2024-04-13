@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 struct SearchCellViewModel{
     let result : Result?
     init(result: Result?) {
@@ -19,5 +20,18 @@ struct SearchCellViewModel{
     }
     var catagoryLabel: String?{
         return result?.primaryGenreName
+    }
+    var appImage : URL?{
+        return URL(string: result?.artworkUrl100 ?? "error")
+    }
+    
+    var appInfoPhoto_1: URL?{
+        return URL(string: result?.screenshotUrls[0] ?? "error")
+    }
+    var appInfoPhoto_2: URL?{
+        return URL(string: result?.screenshotUrls[1] ?? "error")
+    }
+    var appInfoPhoto_3: URL?{
+        return URL(string: result?.screenshotUrls[2] ?? "error")
     }
 }

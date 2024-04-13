@@ -6,13 +6,14 @@
 //
 
 import UIKit
+import Kingfisher
 
 class SearchCell : UICollectionViewCell{
     // MARK: - Properties
     var result : Result? {
         didSet { configure() }
     }
-    
+   
     
     
     private let appPhoto: UIImageView = {
@@ -27,19 +28,19 @@ class SearchCell : UICollectionViewCell{
     private let appScreen1: UIImageView = {
         let imageView = UIImageView()
         imageView.customMode()
-        imageView.backgroundColor = .systemTeal
+        imageView.screenShot()
         return imageView
     }()
     private let appScreen2: UIImageView = {
         let imageView = UIImageView()
         imageView.customMode()
-        imageView.backgroundColor = .systemTeal
+        imageView.screenShot()
         return imageView
     }()
     private let appScreen3: UIImageView = {
         let imageView = UIImageView()
         imageView.customMode()
-        imageView.backgroundColor = .systemTeal
+        imageView.screenShot()
         return imageView
     }()
     
@@ -144,5 +145,9 @@ extension SearchCell{
         self.nameLabel.text = model.nameLabel
         self.ratingLabel.text = model.ratingLabel
         self.catagoryLabel.text = model.catagoryLabel
+        self.appPhoto.kf.setImage(with: model.appImage)
+        self.appScreen1.kf.setImage(with: model.appInfoPhoto_1)
+        self.appScreen2.kf.setImage(with: model.appInfoPhoto_2)
+        self.appScreen3.kf.setImage(with: model.appInfoPhoto_3)
     }
 }
