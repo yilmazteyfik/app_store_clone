@@ -9,10 +9,15 @@ import UIKit
 
 class AppCell : UICollectionViewCell{
     // MARK: - Properties
+    var feed : Feed?{
+        didSet{
+            configure()
+        }
+    }
     let sectionLabel: UILabel = {
         let label = UILabel()
         label.text = "Section Label"
-        label.font = UIFont.boldSystemFont(ofSize: 24)
+        label.font = UIFont.preferredFont(forTextStyle: .title2)
         
         return label
     }()
@@ -32,7 +37,6 @@ class AppCell : UICollectionViewCell{
 // MARK: - Helpers
 extension AppCell{
     private func style(){
-        backgroundColor = .blue
         sectionLabel.translatesAutoresizingMaskIntoConstraints = false
         appCellViewController.view.translatesAutoresizingMaskIntoConstraints = false
     }
@@ -52,5 +56,13 @@ extension AppCell{
             
         ])
         
+    }
+    private func configure(){
+        guard let feed = self.feed else {
+            printContent("AppCell Configure Error")
+            return
+        }
+        self.sectionLabel.text = feed.title
+        self.appCellViewController.results = feed.results
     }
 }

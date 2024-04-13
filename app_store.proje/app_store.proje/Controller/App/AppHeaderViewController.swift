@@ -9,6 +9,11 @@ import UIKit
 private let reuseIndentifier = "AppHeaderViewCell"
 class AppHeaderViewController : UICollectionViewController{
     // MARK: - Properties
+    var appHeaderResult : [AppHeaderModel] = []{
+        didSet{
+            collectionView.reloadData()
+        }
+    }
     // MARK: - Lifecycles
     init(){
         let flowLayout = UICollectionViewFlowLayout()
@@ -38,18 +43,22 @@ extension AppHeaderViewController{
 
 extension AppHeaderViewController{
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return self.appHeaderResult.count
     }
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIndentifier, for: indexPath) as! AppHeaderViewCell
+        cell.appHeaderModel = self.appHeaderResult[indexPath.row]
         return cell
     }
 }
 extension AppHeaderViewController : UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return .init(width: view.frame.width - 25, height: view.frame.height)
+        return .init(width: view.frame.width - 40, height: view.frame.height)
     }
-    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return .init(top: 0, left: 10, bottom: 0, right: 0)
+    }
+
 }
 
 

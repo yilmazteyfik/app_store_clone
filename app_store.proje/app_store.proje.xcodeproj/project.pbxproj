@@ -31,6 +31,10 @@
 		A5B77C1C2BCA18F9009BCC64 /* AppHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B77C1B2BCA18F9009BCC64 /* AppHeaderViewCell.swift */; };
 		A5B77C1E2BCA21AF009BCC64 /* AppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B77C1D2BCA21AF009BCC64 /* AppService.swift */; };
 		A5B77C202BCA239B009BCC64 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B77C1F2BCA239B009BCC64 /* AppModel.swift */; };
+		A5B77C222BCABC4E009BCC64 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B77C212BCABC4E009BCC64 /* Constant.swift */; };
+		A5B77C242BCABD18009BCC64 /* AppCellDetailCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B77C232BCABD18009BCC64 /* AppCellDetailCellViewModel.swift */; };
+		A5B77C262BCAC15B009BCC64 /* AppHeaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B77C252BCAC15B009BCC64 /* AppHeaderModel.swift */; };
+		A5B77C282BCAC79D009BCC64 /* AppHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B77C272BCAC79D009BCC64 /* AppHeaderViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +61,10 @@
 		A5B77C1B2BCA18F9009BCC64 /* AppHeaderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHeaderViewCell.swift; sourceTree = "<group>"; };
 		A5B77C1D2BCA21AF009BCC64 /* AppService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppService.swift; sourceTree = "<group>"; };
 		A5B77C1F2BCA239B009BCC64 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		A5B77C212BCABC4E009BCC64 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		A5B77C232BCABD18009BCC64 /* AppCellDetailCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCellDetailCellViewModel.swift; sourceTree = "<group>"; };
+		A5B77C252BCAC15B009BCC64 /* AppHeaderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHeaderModel.swift; sourceTree = "<group>"; };
+		A5B77C272BCAC79D009BCC64 /* AppHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHeaderViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +127,8 @@
 			isa = PBXGroup;
 			children = (
 				A519D2FE2BC8039D007CDD40 /* SearchCellViewModel.swift */,
+				A5B77C232BCABD18009BCC64 /* AppCellDetailCellViewModel.swift */,
+				A5B77C272BCAC79D009BCC64 /* AppHeaderViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -128,6 +138,7 @@
 			children = (
 				A519D2FA2BC77743007CDD40 /* SearchResult.swift */,
 				A5B77C1F2BCA239B009BCC64 /* AppModel.swift */,
+				A5B77C252BCAC15B009BCC64 /* AppHeaderModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -145,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				A519D2EB2BC76857007CDD40 /* Extension.swift */,
+				A5B77C212BCABC4E009BCC64 /* Constant.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -268,8 +280,12 @@
 				A5B77C1C2BCA18F9009BCC64 /* AppHeaderViewCell.swift in Sources */,
 				A5B77C162BC9FFEA009BCC64 /* AppCellDetail.swift in Sources */,
 				A519D2FB2BC77743007CDD40 /* SearchResult.swift in Sources */,
+				A5B77C242BCABD18009BCC64 /* AppCellDetailCellViewModel.swift in Sources */,
+				A5B77C222BCABC4E009BCC64 /* Constant.swift in Sources */,
 				A549987B2BC71D340059D754 /* TodayViewController.swift in Sources */,
+				A5B77C262BCAC15B009BCC64 /* AppHeaderModel.swift in Sources */,
 				A54998882BC72AAE0059D754 /* SearchCell.swift in Sources */,
+				A5B77C282BCAC79D009BCC64 /* AppHeaderViewModel.swift in Sources */,
 				A54998622BC71AA70059D754 /* AppDelegate.swift in Sources */,
 				A54998762BC71AE20059D754 /* MainTabBarController.swift in Sources */,
 				A5B77C202BCA239B009BCC64 /* AppModel.swift in Sources */,

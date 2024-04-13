@@ -6,12 +6,20 @@
 //
 
 import UIKit
+import Kingfisher
 
 class AppCellDetail : UICollectionViewCell{
     // MARK: - Properties
+    var result : FeedResult?{
+        didSet{
+            configure()
+        }
+    }
     private let appIcon : UIImageView = {
         let imageView =  UIImageView()
+        imageView.customMode()
         imageView.backgroundColor = .systemPurple
+
         return imageView
     }()
     private let nameLabel : UILabel = {
@@ -79,5 +87,16 @@ extension AppCellDetail{
         ])
         
         
+    }
+    private func configure(){
+        guard let result = self.result else {
+            print("AppCellDetail Configure() ERROR")
+            return
+        }
+        let model = AppCellDetailCellViewModel(result: result)
+        
+        self.nameLabel.text = model.name
+        self.firmLabel.text = model.artistName
+        self.appIcon.kf.setImage(with: model.appImageUrl)
     }
 }

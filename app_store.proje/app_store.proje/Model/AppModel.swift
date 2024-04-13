@@ -6,16 +6,16 @@
 //
 
 import Foundation
-struct AppModel : Decodable{
-    let feed : Feed
+struct AppModel: Decodable {
+    let feed: Feed
 }
-
-struct Feed : Decodable {
-    let title : String
-    let results : [FeedResults]
+struct Feed: Decodable {
+    let title: String
+    let results: [FeedResult]
 }
-struct FeedResults : Decodable {
-    let name : String
-    let artisName : String
-    let artworkurl100 : String
+struct FeedResult: Decodable {
+    let name: String
+    let artistName: String
+    let artworkUrl100: String
+    let id: String
 }
